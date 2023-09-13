@@ -13,3 +13,8 @@ git checkout <имя ветки>   --- // переключится на <имя 
                                   :: флаг -b создать ветку если её не существует (git checkout -b second_branch)
 git merge <имя ветки>   ------ // слияние указаной ветки (<имя ветки>) с текущей
 git remote -v           ------ // check remote storages
+
+git config user.name "user-name"        
+git config credential.username "user-name"
+git config user.email "user-email"
+git push -u origin <name of remote storage> main <name of local branch>
