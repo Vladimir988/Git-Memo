@@ -9,10 +9,13 @@ git log   -------------------- // лог
 git reset --hard <хеш коммита> // откатить файлы на состояние определенного коммита, указатель: <хеш коммита>
 git branch   ----------------- // посмотреть текущую ветку
                                   :: флаг -d удалить ветку (git branch -d second_branch)
+                                  :: -r (remote)
 git checkout <имя ветки>   --- // переключится на <имя ветки>
                                   :: флаг -b создать ветку если её не существует (git checkout -b second_branch)
 git merge <имя ветки>   ------ // слияние указаной ветки (<имя ветки>) с текущей
 git remote -v           ------ // check remote storages
+git fetch               ------ // get changes from remote repo
+git pull                ------ // git fetch + git merge
 
 git config user.name "user-name"        
 git config credential.username "user-name"
