@@ -21,3 +21,7 @@ git config user.name "user-name"
 git config credential.username "user-name"
 git config user.email "user-email"
 git push -u origin <name of remote storage> main <name of local branch>
+
+.git/info/exclude (exclude .gitignore only local files (don't push changes to remote .gitignore file))
+git update-index --assume-unchanged YOUR-FILE
+git update-index --no-assume-unchanged YOUR-FILE
