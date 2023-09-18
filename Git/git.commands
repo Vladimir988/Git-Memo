@@ -17,6 +17,7 @@ git remote -v           ------ // check remote storages
 git fetch               ------ // get changes from remote repo
 git pull                ------ // git fetch + git merge
 
+// Resolved this error by updating my username and credentials:
 git config user.name "user-name"        
 git config credential.username "user-name"
 git config user.email "user-email"
@@ -25,3 +26,7 @@ git push -u origin <name of remote storage> main <name of local branch>
 .git/info/exclude (exclude .gitignore only local files (don't push changes to remote .gitignore file))
 git update-index --assume-unchanged YOUR-FILE
 git update-index --no-assume-unchanged YOUR-FILE
+
+
+git reset HEAD -- <file> OR <directoryName>   ------ // remove a single file from the staging area for git
+git branch -d (-D) local_branch               ------ // delete your local branch
