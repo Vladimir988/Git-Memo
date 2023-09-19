@@ -18,7 +18,7 @@ git fetch               ------ // get changes from remote repo
 git pull                ------ // git fetch + git merge
 
 git stash               ------ // hide local changes
-git stash apply         ------ // return uncommited local changes
+git stash apply@{0}     ------ // return uncommited local changes ( @{0} - name of stash item )
 git stash list          ------ // show list of uncommited changes
 
 // Resolved this error by updating my username and credentials:
