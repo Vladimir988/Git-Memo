@@ -30,3 +30,11 @@ git update-index --no-assume-unchanged YOUR-FILE
 
 git reset HEAD -- <file> OR <directoryName>   ------ // remove a single file from the staging area for git
 git branch -d (-D) local_branch               ------ // delete your local branch
+
+
+ls ~/.ssh                                     ------ // check ssh keys
+find ~/.ssh                                   ------ // find ssh keys (address)
+
+ssh-keygen -t ed25519 -C "<comment>"          ------ // ssh-key generate
+
+git remote add <name-remote-ssh-hub> <ssh-link> (git@github.com:Vladimir988/Laravel-Ci-Cd.git)  ------ // find ssh keys (address)
