@@ -20,6 +20,7 @@ git pull                ------ // git fetch + git merge
 git stash                     ------ // hide local changes
 git stash apply stash@{0}@{0} ------ // return uncommited local changes ( @{0} - name of stash item )
 git stash list                ------ // show list of uncommited changes
+git stash clear               ------ // clear list of uncommited changes
 
 // Resolved this error by updating my username and credentials:
 git config user.name "user-name"        
