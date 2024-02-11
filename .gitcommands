@@ -21,6 +21,10 @@ git branch
 ### remove current branch
 git branch -d [-r (remote)] <branch-name>
 
+### remove current branch
+git checkout <old-branch-name>
+git branch -m <old-branch-name> <new-branch-name>
+
 ### checkout to specific branch
 git checkout [-b (create)] <branch-name>
 
