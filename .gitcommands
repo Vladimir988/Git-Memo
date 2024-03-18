@@ -77,6 +77,10 @@ ssh-keygen -t ed25519 -C "<comment>"
 ### copy ssh key to clipboard
 pbcopy < ~/.ssh/id_ed25519.pub
 
+### if you prefer subshells, you could try the following (though it is more fragile):
+ssh-agent $(ssh-add /somewhere/yourkey; git clone git@github.com:user/project.git <folder name>)
+example: ssh-agent $(ssh-add ~/.ssh/Vladimir988; git clone git@github.com:Vladimir988/Redux.git redux)
+
 ### check remote repository
 git remote -v
 
