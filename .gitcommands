@@ -84,12 +84,10 @@ ssh-agent $(ssh-add ~/.ssh/id_ed25519; git remote add origin git@github.com:Vlad
 
 ### check which user is via SSH:
 ssh -T git@github.com
-
 ### determine which key was associated with your_current_github_username:
 cat ~/.ssh/*.pub
-
 ### how to specify the username that SSH should send to the remote system using the git GUI:
-eval "$(ssh-agent -s)" && ssh-add ~/.ssh/Vladimir988
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/your_current_github_username       example: (eval "$(ssh-agent -s)" && ssh-add ~/.ssh/Vladimir988)
 
 ### check remote repository
 git remote -v
