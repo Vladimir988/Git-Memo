@@ -162,3 +162,8 @@ git remote remove <branch-name> - (origin as usual)
 ```bash
 git remote add <name-remote-ssh-hub> <ssh-link> (git@github.com:Vladimir988/Laravel-Ci-Cd.git)
 ```
+
+### rollback for 1 commit:
+```bash
+git reset --soft HEAD~1
+```
